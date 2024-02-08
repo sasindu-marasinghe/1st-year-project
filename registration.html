@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/registration.css">
+    <link rel="icon" href="/images/favicon.ico" type="favicon.ico">
+    <title>Registration</title>
+</head>
+<body>
+   
+    <div class="container">
+        <form id="form1" action="/php/registration.php" method="post" enctype="multipart/form-data">
+            <h3>PERSONAL DETAILS</h3>
+            <input type="text" class="name" id="name"  placeholder="name with initials" name="iname"  required>
+            <input type="text" class="name1" id="name1" placeholder="full name" name="fname">
+            <input type="date" class="birth" id="birth" name="birth"  required>
+            <input type="text"  id="email" class="email" placeholder="email address" name="email" required>
+            <input type="text"  id="phone" class="phone" placeholder="mobile number" name="phone" required> 
+            <input type="password"  id="password" class="password" placeholder="enter password" name="pass" required >
+            <input type="password"  id="con-password" class="con-password" placeholder="confirm password" name="cpass" required>
+
+            <div class="button-box">
+                <button class="next-btn" id="next1" type="button">Next</button>
+            </div>
+        </form>
+
+        <form id="form2" action="/php/registration.php" method="post" enctype="multipart/form-data">
+            <h3>RESIDENTIAL DETAILS</h3>
+            <input type="text" class="country" name="country" id="country" placeholder="country" required >
+            <input type="text" class="address" name="address" id="address" placeholder="address" required>
+            <input type="text" name="district" id="district" placeholder="district">
+            <input type="text" name="city" id="city" placeholder="city">
+            <input type="text" name="postal" id="postal" placeholder="postal code" required>
+            <div class="button-box">
+                <button class="back-btn" id="back1" type="button">Back</button>
+                <button class="next-btn" id="next2" type="button">Next</button>
+            </div>
+        </form>
+
+        <form id="form3" action="/php/registration.php" method="post" enctype="multipart/form-data">
+            <h3>IDENTIFICATION DETAILS</h3>
+            <label>Upload your NIC/Passport front image</label>
+            <input type="file" name="fid" class="id" required>
+            <label>Upload your NIC/Passport back image</label>
+            <input type="file" name="bid" class="id" required>
+            <label>Upload relevent medical report</label>
+            <input type="file" name="report" class="report" required>
+            
+            <label>Terms and Conditions</label>
+            <p>I agree these above informations are true <br>
+            and if their any relevent information is not true, I accept <br>
+            regarding complaintments.</p>
+            <input type="checkbox" class="check" required>
+
+            <div class="button-box">
+                <button class="back-btn" id="back2" type="button">Back</button>
+                <button class="submit-btn" id="submit" type="submit" value="register now" name="submit">Submit</button>
+            </div>
+        </form>
+
+        <div class="step-row">
+            <div id="progress" class="pro"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+        </div>
+
+    </div>
+    <script src="/js/registration.js"></script>
+    
+</body>
+
+</html>

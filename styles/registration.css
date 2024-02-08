@@ -1,0 +1,133 @@
+:root{
+    --background: #fff;
+    --text-primary:#000;
+    --text-secondary: #8e05c2;
+    --acsent: #8e05c2;
+    --border: #333;
+    --form-bg: #fff;
+    --drk-btn:#000;
+    --dark-text-primary:#fff;
+    --text:"Dark Mode";
+  }
+  
+  [data-theme='dark']{
+    --background: #0b0c10;
+    --text-primary:rgb(255, 255, 255);
+    --text-secondary: #8e05c2;
+    --acsent:#8e05c2;
+    --border: #333;
+    --form-bg: #000;
+    --drk-btn:#fff;
+    --dark-text-primary:rgb(0, 0, 0);
+    --text:"Light Mode";
+    --form-txt:#fff;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('/images/bg.png');
+}
+
+.container{
+   height: 500px;
+   width: 600px;
+   margin:5% auto;
+   margin-left: 10%;
+   border-radius: 5px;
+   background-color: white;
+   position: relative;
+   overflow: hidden;
+}
+h3{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.container form{
+  width: 280px;
+  position: absolute;
+  top: 40px;
+  left: 23%;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+form input{
+  width:100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background:transparent;
+}
+form .birth{
+  color: #999;
+}
+.button-box{
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+form button{
+  width: 110px;
+  height: 35px;
+  margin: 0px 10px;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border-radius: 30px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+#form2{
+  left: 850px;
+}
+#form3{
+  left: 850px;
+}
+#form3 p{
+  padding-top: 10px;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 8px;
+  text-decoration: none;
+}
+#form3 .check{
+  margin-left: -47%;
+}
+.step-row{
+  width: 600px;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+.step-col{
+  width: 200px;
+  text-align: center;
+  color: #333;
+  position: relative;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.pro{
+  position: absolute;
+  height: 100%;
+  width: 200px;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  transition: 1s;
+}

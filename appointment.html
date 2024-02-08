@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+    <link rel="stylesheet" href="/styles/appointment.css">
+</head>
+<body>
+    <div class="description">
+        <h2>Appointment</h2>
+        <hr>
+    </div>
+
+    <div class="container">
+        <form action="">
+            <h3>Appointment Details</h3>
+
+            <input type="text" name="fname" placeholder="full name" required>
+            <input type="text" name="address" placeholder="address">
+            <input type="text" name="email" placeholder="email">
+            <input type="text" name="phone" placeholder="mobile number" required>
+            <label for="date">Appointment Date</label>
+            <input type="date" name="date" id="date" required>
+            <label for="time">Time</label>
+            <input type="time" name="time" id="time" required>
+
+            <label for="description">Description</label>
+            <textarea name="description" id="description" cols="30" rows="5">Type here</textarea>
+            <div class="btn-bar">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

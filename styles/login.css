@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x:hidden ;
+    overflow-y: hidden;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: bisque;
+}
+p{
+    font-size: 42px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    margin-left: 30px;
+    margin-top: 0;
+}
+.front-img{
+    margin-left: 60px;
+    margin-top: 35px;
+    
+}
+
+.form{
+    position: absolute;
+    margin-left:70%;
+    margin-top: -40%;
+    height: 550px;
+    width: 350px;
+    border-radius: 25px;
+    background-color: white;
+    
+}
+.form:hover{
+    box-shadow: 2.5px 2.5px rgb(225, 225, 225);
+}
+.form .all{
+    padding-left: 28%;
+    padding-top: 50%; 
+}
+.form .header{
+    font-weight: 600;
+    font-size: 21px;
+    font-family: sans-serif;
+    margin-left: -15px;
+    margin-top: -20%;
+    cursor: default;
+}
+.form .all .header hr{
+    margin-top: 5px;
+    width: 200px;
+    background-color: black;
+}
+
+.form .content{
+    padding-top: 50px;
+    margin-left: -10px;
+}
+.form .content .username{
+    height: 35px;
+    width: 190px;
+    border-radius: 10px;
+    box-shadow: none;
+    border-color: black;
+    text-align: center;
+    color: black;
+    font-family: monospace;
+    
+}
+
+.form .content .password{
+    margin-top: 15px;
+        height: 35px;
+        width: 190px;
+        border-radius: 10px;
+        box-shadow: none;
+        border-color: black;
+        text-align: center;
+        color: black;
+        font-family: monospace;
+    
+}
+.form .content .forgot{
+    font-size: 10px;
+    margin-left: 105px;
+}
+.form .buttons{
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.form .buttons .log-btn{
+    height: 35px;
+    width: 155px;
+    margin-top: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    font-family:sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.form .buttons .log-btn:hover{
+    background-color: rgb(112, 6, 6);
+}
+.form .buttons .register-btn{
+    height: 35px;
+    width: 155px;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    font-family:sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+.form .buttons .register-btn:hover{
+    background-color: rgb(112, 6, 6);
+}

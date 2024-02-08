@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment portal</title>
+    <link rel="stylesheet" href="/styles/payment.css">
+</head>
+<body>
+    <div class="description">
+        <h2>Online payment</h2>
+        <hr>
+    </div>
+
+    <div class="container">
+        <form action="/php/paymentdetails.php" method="POST">
+            <h3>Payment details</h3>
+            <input type="text" name="fname" placeholder="full name" required>
+            <input type="text" name="email" placeholder="email">
+            <input type="text" name="telephone" placeholder="mobile number" required>
+            <input type="text" name="card_name" placeholder="card name">
+            <input type=" text" name="reason" placeholder="reason of payment" required>
+
+            <div class="btn-bar">
+                <button name="submit1" value="submit1" type="submit">Submit</button>
+            </div>
+        </form>
+
+        <form id="form2" action="">
+            <h4>Payment Options</h4>
+            <div class="images">
+                <ul>
+                    <li><img src="/images/paypal.png" height="20px" width="20px"></li>
+                    <li><img src="/images/mastercard.png" height="20px" width="20px"></li>
+                    <li><img src="/images/maestro.png" height="20px" width="20px"></li>
+                    <li><img src="/images/visa.png" height="20px" width="20px"></li>
+                    <li><img src="/images/american.png" height="20px" width="20px"></li>
+                </ul>
+                
+            </div>
+            <p>Pay by your payment securely</p>
+
+            <h4>Credit Card</h4>
+            <input type="text" name="credit_number" placeholder="credit card number" required>
+            <input type="text" name="date" class="text1" placeholder="MM/YY" required><br>
+            <input type="text" name="cvv" class="text2" placeholder="cvv" required>
+
+            <h4 class="tex">PayPal</h4>
+            <p class="message">your personal data will be used for process your order, support your
+                experience through this website. and perposes describe in our privacy policy.
+            </p>
+            <input type="text" name="paypal" placeholder="paypal card number">
+            <div class="btn-bar">
+                <button>Pay</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

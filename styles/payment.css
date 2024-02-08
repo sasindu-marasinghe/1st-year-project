@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: bisque;
+}
+.description h2{
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.description hr{
+    background-color: black;
+}
+.container{
+    height: 540px;
+    width: 1000px;
+    margin:2% auto;
+    margin-left: 10%;
+    border-radius: 5px;
+    background-color: rgb(54, 54, 54);
+    position: relative;
+    overflow: hidden;
+}
+.container h3,h4{
+    text-align: left;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.container form{
+  width: 300px;
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  font-size: 13px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+form input{
+    width:100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background:transparent;
+    color: white;
+}
+.btn-bar{
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0px 10px;
+    border-radius: 30px;
+    border: 0;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: ease-in-out 0.25s;
+  }
+
+  form button:hover{
+      background-color: transparent;
+      color: white;
+  }
+
+#form2{
+    margin-left: 480px;
+}
+#form2 h4{
+    padding-top:-10px ;
+}
+
+
+#form2 .images{
+    margin-left: 50%;
+    margin-top: -25px;
+    height: 25px;
+    width: 170px;
+    background-color: white;
+}
+#form2 .images ul{
+    display: inline;
+    list-style: none;
+}
+#form2 .images ul li{
+    float: left;
+    padding: 3px;
+}
+#form2 p{
+    color: white;
+    font-size: 8px;
+    margin-left: 55%;
+    padding-top: 5px;
+}
+#form2 .text1{
+    margin-left: 0%;
+    width: 50%;
+}
+#form2 .text2{
+    width: 30%;
+    
+}
+#form2 .tex{
+    margin-top: 5px;
+}
+#form2 .message{
+    margin-left: 0%;
+    margin-top: -10%;
+    text-align: left;
+    font-weight: 100;
+}
